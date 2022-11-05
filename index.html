@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>        
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Bootstrap Instagram Photo Feed</title>    
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-light bg-light p-2"> <!-- navbar-expand-lg -->
+            <a class="navbar-brand" href="#">
+                <i class="fa-brands fa-instagram"></i>
+                <strong>Instagram</strong>
+            </a>
+            <div class="nav nav-pills float-end">
+                
+                <button type="button" class="btn btn-success m-2" data-bs-toggle="modal" data-bs-target="#createNewPost">
+                    Create a new post
+                </button>
+                                
+                <div class="dropdown m-2">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">                              
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end">
+                      <a class="dropdown-item" href="#">Profile</a>
+                      <a class="dropdown-item" href="#">Accesibility</a>
+                      <a class="dropdown-item" href="#">Privacy and Data</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item text-danger" href="#">Log out</a>
+                    </div>
+                </div>                
+            </div>
+        </nav>
+
+        <nav><!--Picture Tabs Bar-->
+            <div class="nav nav-tabs justify-content-center mb-5" id="nav-tab" role="tablist">
+                <button class="nav-link" id="nav-tiles-tab" data-bs-toggle="tab" data-bs-target="#nav-tiles" type="button" role="tab" aria-controls="nav-tiles" aria-selected="false">
+                    <i class="fa-solid fa-table-cells"></i><!--<i class="fa-sharp fa-solid fa-grid"></i>-->
+                  </button>
+                <button class="nav-link active" id="nav-feed-tab" data-bs-toggle="tab" data-bs-target="#nav-feed" type="button" role="tab" aria-controls="nav-feed" aria-selected="true">
+                    <i class="fa-sharp fa-solid fa-square"></i>
+              </button>              
+            </div>
+        </nav>
+
+        <div class="tab-content" id="nav-tabContent"><!--Picture Tabs-->
+
+            <!--Feed Tab-->
+            <div class="tab-pane fade show active justify-content-center p-5" id="nav-feed" role="tabpanel" aria-labelledby="nav-feed-tab">
+                
+                <div class="card m-auto mb-5" style="width: 20rem;">                    
+                    <div class="card-body">
+                      <p class="card-title fw-bold">Picture Uno
+                      <small class="float-end text-muted">1/5</small>
+                    </p>
+                    </div>
+                    <img src="./Images/funny-Jiraffe-kissing-lips.jpg" alt="funny giraffe width lipstick" class="card-img-top">
+                    <div class="card-body">
+                        <small>25 Likes</small>  
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br/></p>                      
+                    </div>
+                </div>
+
+                <div class="card m-auto mb-5" style="width: 20rem;">                    
+                <div class="card-body">
+                    <p class="card-title fw-bold">Picture Dos
+                        <small class="float-end text-muted">2/5</small>
+                    </p>
+                </div>
+                <img src="./Images/Monkey.jpg" alt="Monkey saying hi" class="card-img-top">
+                <div class="card-body">
+                    <small>25 Likes</small>  
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br/></p>                      
+                </div>
+                </div>
+
+                <div class="card m-auto mb-5" style="width: 20rem;">                    
+                    <div class="card-body">
+                        <p class="card-title fw-bold">Picture 
+                            <small class="float-end text-muted">3/5</small>
+                        </p>
+                    </div>
+                    <img src="./Images/chipmunk.jpg"  class="card-img-top" alt="Chipmunk eating corn">
+                    <div class="card-body">
+                        <small>25 Likes</small>  
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br/></p>                      
+                    </div>
+                </div>
+                <div class="card m-auto mb-5" style="width: 20rem;">                    
+                    <div class="card-body">
+                        <p class="card-title fw-bold">Picture 
+                            <small class="float-end text-muted">4/5</small>
+                        </p>
+                    </div>
+                    <img src="./Images/funny-goat.jpg" class="card-img-top" alt="funny goat">
+                    <div class="card-body">
+                        <small>25 Likes</small>  
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br/></p>                      
+                    </div>
+                </div>
+                <div class="card m-auto mb-5" style="width: 20rem;">                    
+                    <div class="card-body">
+                        <p class="card-title fw-bold">Picture 
+                            <small class="float-end text-muted">5/5</small>
+                        </p>
+                    </div>
+                    <img src="./Images/UglyDog.jpg" class="card-img-top" alt="Ugly dog with glasses">
+                    <div class="card-body">
+                        <small>25 Likes</small>  
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br/></p>                      
+                    </div>
+                </div>
+                <div class="card m-auto mb-5" style="width: 20rem;">                    
+                    <div class="card-body">
+                        <p class="card-title fw-bold">Picture 
+                            <small class="float-end text-muted">/5</small>
+                        </p>
+                    </div>
+                    <img src="./Images/Llama.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <small>25 Likes</small>  
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br/></p>                      
+                    </div>
+                </div>
+            </div>
+
+            <!--Picture tiles Tab -->
+            <div class="tab-pane fade justify-content-center" id="nav-tiles" role="tabpanel" aria-labelledby="nav-tiles-tab">
+                <div class="row masonry-container m-auto justify-content-center">
+                    <div class="card m-5 p-0" style="width: 20rem;">
+                        <img src="./Images/funny-Jiraffe-kissing-lips.jpg" alt="funny giraffe width lipstick" class="card-img-top">
+                    </div>
+
+                    <div class="" style="width: 20rem;">   
+                        <img src="./Images/Monkey.jpg" alt="Monkey saying hi" class=" img-fluid">
+                    </div>
+
+                    <div class="card m-5 p-0" style="width: 20rem;">  
+                        <img src="./Images/chipmunk.jpg"  class="card-img-top" alt="Chipmunk eating corn">
+                    </div>
+
+                    <div class="card m-5 p-0" style="width: 20rem;">                    
+                        <img src="./Images/funny-goat.jpg" class="card-img-top" alt="funny goat">
+                    </div>
+
+                    <div class="card m-5 p-0" style="width: 20rem;">
+                        <img src="./Images/UglyDog.jpg" class="card-img-top" alt="Ugly dog with glasses">
+                    </div>
+
+                    <div class="card m-5 p-0" style="width: 20rem;">     
+                        <img src="./Images/Bear.jpg" class="card-img-top">
+                    </div>
+
+                    <div class="card m-5 p-0" style="width: 20rem;">     
+                        <img src="./Images/hippopotamus.jpg" class="card-img-top">
+                    </div>
+
+                    <div class="card m-5 p-0" style="width: 20rem;">     
+                        <img src="./Images/Llama.jpg" class="card-img-top">
+                    </div>
+
+                    <div class="card m-5 p-0" style="width: 20rem;">     
+                        <img src="./Images/Monkey.jpg" class="card-img-top">
+                    </div>
+
+                    <div class="card m-5 p-0" style="width: 20rem;">     
+                        <img src="./Images/Seals.jpg" class="card-img-top">
+                    </div>
+                </div>  
+            </div>          
+        </div><!--End of Tabs-->
+
+
+        <!--Create a New Post Pop-up Window-->
+        <div class="modal fade" id="createNewPost" tabindex="-1" aria-labelledby="createNewPost" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="createNewPostLabel">Create new post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">                    
+                        <label for="postCaption" class="form-label fw-bold">Caption:</label>
+                        <textarea class="form-control mb-2" id="postCaption" rows="3"></textarea>
+
+                        <button type="button" class="btn btn-light" >
+                            <i class="fa-solid fa-camera"></i>
+                        </button>
+                        <button type="button" class="btn btn-light" >
+                            <i class="fa-solid fa-location-dot"></i>
+                        </button>                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+                </div>
+            </div>
+        </div>                    
+        <!-- end of PopUp -->
+
+    </div>
+      
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body>
+</html>

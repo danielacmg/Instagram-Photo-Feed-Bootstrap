@@ -1,0 +1,19 @@
+/* .navbar-nav { .dropdown-menu-right.dropdown-menu { left: unset!important; } }  */
+
+/* .dropdown-menu-right {
+    right: 0 !important;
+    left: auto !important;
+} */
+
+.masonry-container {
+    column-count: 4;
+    column-gap: 15px;
+   }
+   .masonry-item {
+    display: inline-block;
+    width: 100%;
+   }
+   .masonry-item img {
+    display:block;
+    width: 100%;
+   }
